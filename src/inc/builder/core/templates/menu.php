@@ -33,7 +33,7 @@ $class = ( 'c' === get_user_setting( 'ttfmakemt' . get_the_ID() ) ) ? 'closed' :
 					</div>
 					<div class="section-type-description">
 						<h4>
-							<?php _e( 'Post List', 'make' ); ?>
+							<?php _e( 'Posts List', 'make' ); ?>
 						</h4>
 						<p>
 							<?php
