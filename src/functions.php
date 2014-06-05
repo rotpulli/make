@@ -505,6 +505,7 @@ function ttfmake_plus_styles() {
 		position: relative;
 		top: 38px;
 		left: 17px;
+		line-height: 0 !important;
 	}
 	.make-plus-products .section-type-description {
 		color: #777777;
