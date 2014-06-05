@@ -38,7 +38,7 @@ $class = ( 'c' === get_user_setting( 'ttfmakemt' . get_the_ID() ) ) ? 'closed' :
 						<p>
 							<?php
 							printf(
-								__( '%s and display posts or pages in a list or grid layout.', 'make' ),
+								__( '%s and display your posts or pages in a list or grid layout.', 'make' ),
 								sprintf(
 									'<a href="%1$s" target="_blank">%2$s</a>',
 									esc_url( ttfmake_get_plus_link( 'post-list-section' ) ),
