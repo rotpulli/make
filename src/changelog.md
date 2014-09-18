@@ -1,3 +1,7 @@
+## 1.4.0-beta
+
+* Shhh...it's a secret!
+
 ## 1.3.2
 
 * Fixed fatal error in PHP 5.2.
