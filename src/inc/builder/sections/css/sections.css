@@ -320,7 +320,8 @@
 .edit-text-column-link,
 .configure-gallery-item-link,
 .configure-banner-slide-link,
-.configure-column-link {
+.configure-column-link,
+.remove-widget-link {
 	display: inline-block;
 	position: absolute;
 	clear: both;
@@ -336,11 +337,13 @@
 	outline: none !important;
 }
 .edit-text-column-link,
-.configure-column-link {
+.configure-column-link,
+.remove-widget-link {
 	top: 0; /*reset*/
 }
 .remove-gallery-item-link,
-.remove-banner-slide-link {
+.remove-banner-slide-link,
+.remove-widget-link {
 	right: 0; /*reset*/
 }
 .remove-gallery-item-link {
@@ -363,7 +366,8 @@
 .edit-text-column-link:hover,
 .configure-gallery-item-link:hover,
 .configure-banner-slide-link:hover,
-.configure-column-link:hover {
+.configure-column-link:hover,
+.remove-widget-link:hover {
 	color: #222222;
 }
 .edit-gallery-item-link span,
@@ -373,7 +377,8 @@
 .edit-text-column-link span,
 .configure-gallery-item-link span,
 .configure-banner-slide-link span,
-.configure-column-link span {
+.configure-column-link span,
+.remove-widget-link span {
 	display: none;
 	text-indent: -9999px;
 	white-space: nowrap;
@@ -387,7 +392,8 @@
 	speak: none; /*reset*/
 }
 .remove-gallery-item-link:before,
-.remove-banner-slide-link:before {
+.remove-banner-slide-link:before,
+.remove-widget-link:before {
 	content: "\f182";
 	font: 400 20px/39px dashicons;
 	speak: none; /*reset*/
