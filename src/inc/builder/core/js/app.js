@@ -80,7 +80,7 @@ var oneApp = oneApp || {}, ttfMakeFrames = ttfMakeFrames || {};
 		} else {
 			currentOrderArray = currentOrder.split(',');
 			currentOrderArray = _.reject(currentOrderArray, function (item) {
-				return parseInt(id, 10) === parseInt(item, 10);
+				return id.toString() === item.toString();
 			});
 		}
 
