@@ -174,12 +174,12 @@ a img {
 /*---------------------------------------------------------
  Extends (_preboot.scss)
 -------------------------------------------------------- */
-.clear, .site-header, .site-header-main, .header-bar, .site-content, .site-footer, .gallery, .entry-content, .builder-section, .site-content .container, .infinite-footer-container, #comments-nav, div.sharedaddy {
+.clear, .site-header, .site-header-main, .header-bar, .site-content, .site-footer, .gallery, .entry-content, .builder-section, .site-content .container, .site-content .infinite-footer-container, #comments-nav, div.sharedaddy {
 	zoom: 1; }
-.clear:before, .site-header:before, .site-header-main:before, .header-bar:before, .site-content:before, .site-footer:before, .gallery:before, .entry-content:before, .builder-section:before, .site-content .container:before, .infinite-footer-container:before, #comments-nav:before, div.sharedaddy:before, .clear:after, .site-header:after, .site-header-main:after, .header-bar:after, .site-content:after, .site-footer:after, .gallery:after, .entry-content:after, .builder-section:after, .site-content .container:after, .infinite-footer-container:after, #comments-nav:after, div.sharedaddy:after {
+.clear:before, .site-header:before, .site-header-main:before, .header-bar:before, .site-content:before, .site-footer:before, .gallery:before, .entry-content:before, .builder-section:before, .site-content .container:before, .site-content .infinite-footer-container:before, #comments-nav:before, div.sharedaddy:before, .clear:after, .site-header:after, .site-header-main:after, .header-bar:after, .site-content:after, .site-footer:after, .gallery:after, .entry-content:after, .builder-section:after, .site-content .container:after, .site-content .infinite-footer-container:after, #comments-nav:after, div.sharedaddy:after {
 	display: table;
 	content: ""; }
-.clear:after, .site-header:after, .site-header-main:after, .header-bar:after, .site-content:after, .site-footer:after, .gallery:after, .entry-content:after, .builder-section:after, .site-content .container:after, .infinite-footer-container:after, #comments-nav:after, div.sharedaddy:after {
+.clear:after, .site-header:after, .site-header-main:after, .header-bar:after, .site-content:after, .site-footer:after, .gallery:after, .entry-content:after, .builder-section:after, .site-content .container:after, .site-content .infinite-footer-container:after, #comments-nav:after, div.sharedaddy:after {
 	clear: both; }
 
 .break, p, ul, ol, dl, blockquote, h1, h2, h3, h4, h5, h6, pre, table {
@@ -207,7 +207,7 @@ body.boxed .container, body.boxed .infinite-footer-container {
 	padding: 0 32px;
 	padding:  0 3.2rem; }
 @media screen and (min-width: 800px) {
-	body.boxed .container {
+	body.boxed .container, body.boxed .infinite-footer-container {
 		padding: 0 92px;
 		padding:  0 9.2rem; } }
 body.boxed .site-wrapper {
@@ -332,7 +332,8 @@ a {
 		float: left;
 		max-width: 50%; }
 	.branding-right .site-branding {
-		float: right; } }
+		float: right; }
+	}
 
 .site-description {
 	font-size: 12px;
@@ -388,7 +389,8 @@ a {
 		padding-right: 1.6rem; 
 		padding-left: 0;}
 	.header-bar-flipped .header-bar .menu {
-		float: right; } }
+		float: right; }
+	}
 .header-bar a {
 	color: inherit; }
 .header-bar textarea, .header-bar input {
@@ -634,10 +636,12 @@ a {
 		content: none; }
 	.site-navigation .menu .sub-menu ul, .site-navigation .menu .children ul, .site-navigation .nav-menu .sub-menu ul, .site-navigation .nav-menu .children ul {
 		top: 0;
-		left: 100%; } }
+		left: 100%; }
+	}
 @media screen and (min-width: 800px) {
 	.site-navigation .menu .current_page_item > a, .site-navigation .menu .current_page_ancestor > a, .site-navigation .menu .current-menu-item > a, .site-navigation .menu .current-menu-ancestor > a, .site-navigation .nav-menu .current_page_item > a, .site-navigation .nav-menu .current_page_ancestor > a, .site-navigation .nav-menu .current-menu-item > a, .site-navigation .nav-menu .current-menu-ancestor > a {
-		font-weight: bold; } }
+		font-weight: bold; }
+	}
 .site-navigation .menu .current_page_item > a, .site-navigation .menu .current-menu-item > a, .site-navigation .nav-menu .current_page_item > a, .site-navigation .nav-menu .current-menu-item > a {
 	font-weight: bold; }
 @media screen and (min-width: 800px) {
@@ -650,6 +654,7 @@ a {
 		padding-left: .2rem;
 		content: "  \f078";
 		color: #b9bcbf;}
+
 	.site-navigation ul.menu ul a, .site-navigation .menu ul ul a {
 		min-width: 180px;
 		max-width: 250px; 
@@ -659,11 +664,13 @@ a {
 		background-color: #3070d1; }
 	.site-navigation ul.menu ul a:hover:after, .site-navigation ul.menu ul a:focus:after, .site-navigation .menu ul ul a:hover:after, .site-navigation .menu ul ul a:focus:after {
 		color: #fff; }
+
 	.site-navigation ul.menu li:hover > ul, .site-navigation .menu ul li:hover > ul, .site-navigation ul.menu .focus > ul, .site-navigation .menu .focus > ul {
 		display: block;
 		overflow: inherit;
 		width: inherit; 
-		height: inherit;} }
+		height: inherit;}
+	}
 
 .menu-toggle {
 	font-size: 13px;
@@ -697,13 +704,16 @@ a {
 
 @media screen and (min-width: 800px) {
 	.site-navigation ul {
-		display: none; } }
+		display: none; }
+	}
 
 @media screen and (min-width: 800px) {
 	.menu-toggle {
 		display: none; }
+
 	.site-navigation ul {
-		display: block; } }
+		display: block; }
+	}
 
 /*---------------------------------------------------------
  Main (_scaffolding.scss)
@@ -735,12 +745,16 @@ a {
 @media screen and (min-width: 800px) {
 	.site-footer .columns-1 .widget-area {
 		width: 100%; }
+
 	.site-footer .columns-2 .widget-area {
 		width: 48.3333333333%; }
+
 	.site-footer .columns-3 .widget-area {
 		width: 31.1111111111%; }
+
 	.site-footer .columns-4 .widget-area {
-		width: 22.5%; } }
+		width: 22.5%; }
+	}
 .site-footer .widget-area {
 	float: left;
 	width: 100%;
@@ -1182,7 +1196,7 @@ Notices / Alerts (_elements.scss)
 	content: "\f058"; }
 .ttfmake-alert.ttfmake-important {
 	color: #f89e01;
-	border: 1px solid #fff265;
+	border: 1px solid #fff365;
 	background-color: #fffde5; }
 .ttfmake-alert.ttfmake-important:before {
 	content: "\f06a"; }
@@ -1313,7 +1327,7 @@ iframe[src*="google.com/maps"] {
 	margin-bottom: 2.2rem; 
 	letter-spacing: 0;
 	text-transform: none;}
-.entry-date a, .entry-date .site-wrapper div.sharedaddy h3, .site-wrapper div.sharedaddy .entry-date h3 {
+.entry-date a, .site-wrapper div.sharedaddy h3 a {
 	text-decoration: none; 
 	color: #171717;}
 
@@ -1624,10 +1638,13 @@ iframe[src*="google.com/maps"] {
 @media screen and (min-width: 800px) {
 	.builder-text-columns-2 .builder-text-column {
 		width: 48.3333333333%; }
+
 	.builder-text-columns-3 .builder-text-column {
 		width: 31.1111111111%; }
+
 	.builder-text-columns-4 .builder-text-column {
-		width: 22.5%; } }
+		width: 22.5%; }
+	}
 
 .builder-text-image {
 	margin-bottom: 22px;
@@ -1759,7 +1776,8 @@ iframe[src*="google.com/maps"] {
 	color: #eaecee;}
 @media screen and (min-width: 800px) {
 	.builder-section-banner:hover .cycle-prev, .builder-section-banner:hover .cycle-next, .builder-section-banner:focus .cycle-prev, .builder-section-banner:focus .cycle-next, .ttfmake-shortcode-slider:hover .cycle-prev, .ttfmake-shortcode-slider:hover .cycle-next, .ttfmake-shortcode-slider:focus .cycle-prev, .ttfmake-shortcode-slider:focus .cycle-next {
-		opacity: 1; } }
+		opacity: 1; }
+	}
 .builder-section-banner .cycle-prev:before, .ttfmake-shortcode-slider .cycle-prev:before {
 	left: 32px; 
 	content: "\f0a8";}
@@ -1868,18 +1886,22 @@ iframe[src*="google.com/maps"] {
 @media screen and (min-width: 800px) {
 	.builder-gallery-columns-1 .builder-gallery-item {
 		width: 100%; }
+
 	.builder-gallery-columns-2 .builder-gallery-item {
 		width: 49.5833333333%; }
 	.builder-gallery-columns-2 .builder-gallery-item.last-2 {
 		margin-right: 0; }
+
 	.builder-gallery-columns-3 .builder-gallery-item {
 		width: 32.7777777778%; }
 	.builder-gallery-columns-3 .builder-gallery-item.last-3 {
 		margin-right: 0; }
+
 	.builder-gallery-columns-4 .builder-gallery-item {
 		width: 24.375%; }
 	.builder-gallery-columns-4 .builder-gallery-item.last-4 {
-		margin-right: 0; } }
+		margin-right: 0; }
+	}
 
 /*---------------------------------------------------------
  9. Sidebars (_sidebars.scss)
@@ -1907,10 +1929,12 @@ iframe[src*="google.com/maps"] {
 @media screen and (min-width: 800px) {
 	.has-left-sidebar .site-main {
 		margin-left: 9.5833333333%; }
+
 	.has-right-sidebar .site-main, .has-left-sidebar .site-main {
 		width: 64.5833333333%; }
 	.has-right-sidebar #sidebar-left, .has-right-sidebar #sidebar-right, .has-left-sidebar #sidebar-left, .has-left-sidebar #sidebar-right {
-		width: 25.8333333333%; } }
+		width: 25.8333333333%; }
+	}
 
 /*---------------------------------------------------------
  Left and right together (_sidebars.scss)
@@ -1923,7 +1947,8 @@ iframe[src*="google.com/maps"] {
 		width: 48.3333333333%;
 		margin-left: 3.3333333333%; }
 	.has-left-sidebar.has-right-sidebar #sidebar-left, .has-left-sidebar.has-right-sidebar #sidebar-right {
-		width: 22.5%; } }
+		width: 22.5%; }
+	}
 
 /*---------------------------------------------------------
  8. Widgets (_widgets.scss)

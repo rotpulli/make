@@ -63,7 +63,7 @@
 				self.cache.$builder.show();
 				self.cache.$duplicator.show();
 				self.cache.$builderHide.prop('checked', true).parent().show();
-				self.featuredImageToggle('hide');
+				self.featuredImageToggle('show');
 				self.cache.$body.addClass('ttfmake-builder-active').removeClass('ttfmake-default-active');
 			} else {
 				self.cache.$mainEditor.show();
